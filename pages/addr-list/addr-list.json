@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "查看收货地址",
+  "usingComponents": {
+    "van-button": "/miniprogram_npm/vant-weapp/button/index"
+  }
+}

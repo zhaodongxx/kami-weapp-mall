@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "购物车",
+  "usingComponents": {
+    "van-button": "/miniprogram_npm/vant-weapp/button/index",
+    "van-card": "/miniprogram_npm/vant-weapp/card/index",
+    "van-submit-bar": "/miniprogram_npm/vant-weapp/submit-bar/index",
+    "van-tag": "/miniprogram_npm/vant-weapp/tag/index"
+  }
+}

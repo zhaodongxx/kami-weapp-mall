@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="card">
+      <van-card
+        num="2"
+        price="176.58"
+        desc="300*600, 箱"
+        title="【住范儿 欧神诺】水泥灰系列釉面瓷片墙砖 300*600 9片/箱"
+        thumb="{{ imageURL }}"
+        thumb-mode="scaleToFill"
+      />
+  </view>
+  <view class="card">
+      <van-card
+        num="2"
+        price="176.58"
+        desc="300*600, 箱"
+        title="【住范儿 欧神诺】水泥灰系列釉面瓷片墙砖 300*600 9片/箱"
+        thumb="{{ imageURL }}"
+        thumb-mode="scaleToFill"
+      />
+  </view>
+  <van-submit-bar
+  price="{{ 3050 }}"
+  button-text="提交订单"
+  bind:submit="onClickButton"
+  tip="{{ true }}"
+  >
+    <!-- <van-tag type="primary">标签</van-tag> -->
+    <van-radio checked-color="#f44">全选</van-radio>
+    <view slot="tip">
+      您的收货地址不支持同城送, <text>修改地址</text>
+    </view>
+  </van-submit-bar>
+  <view class="usermotto">
+    <!-- <text class="user-motto">{{motto}}</text> -->
+  </view>
+</view>

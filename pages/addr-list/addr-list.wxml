@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class='addr-list'>
+    <view class='addr'></view>
+  </view>
+</view>
