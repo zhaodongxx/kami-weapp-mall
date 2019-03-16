@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true,
   "usingComponents": {
     "van-button": "/miniprogram_npm/vant-weapp/button/index"
   }

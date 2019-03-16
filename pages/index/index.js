@@ -15,9 +15,46 @@ Page({
     ],
     indicatorDots: true,
     autoplay: true,
-    circular:true, //衔接滑动
+    circular: true, //衔接滑动
     interval: 3000,
-    duration: 1000
+    duration: 1000,
+    goods: [{
+      index: 1,
+      name: "商品名称商品名称商品名称商品名称",
+      minPrice: "23.00元",
+      originalPrice: "23.00元",
+      pic: "/images/books/001.jpg"
+    }, {
+      index: 1,
+      name: "商品名称商品名称商品名称商品名称",
+      minPrice: "23.00元",
+      originalPrice: "23.00元",
+      pic: "/images/books/001.jpg"
+    }, {
+      index: 1,
+      name: "商品名称商品名称商品名称商品名称",
+      minPrice: "23.00元",
+      originalPrice: "23.00元",
+      pic: "/images/books/001.jpg"
+      }, {
+        index: 1,
+        name: "商品名称商品名称商品名称商品名称",
+        minPrice: "23.00元",
+        originalPrice: "23.00元",
+        pic: "/images/books/001.jpg"
+      }, {
+        index: 1,
+        name: "商品名称商品名称商品名称商品名称",
+        minPrice: "23.00元",
+        originalPrice: "23.00元",
+        pic: "/images/books/001.jpg"
+      }, {
+        index: 1,
+        name: "商品名称商品名称商品名称商品名称",
+        minPrice: "23.00元",
+        originalPrice: "23.00元",
+        pic: "/images/books/001.jpg"
+      }]
   },
   //事件处理函数
   bindViewTap: function() {
