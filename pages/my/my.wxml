@@ -22,5 +22,6 @@
       url="/pages/addr-list/addr-list"
     />
   </view>
+  <view class='footer'>zdxx提供技术支持</view>
 </view>
-<view class='footer'>zdxx提供技术支持</view>
+

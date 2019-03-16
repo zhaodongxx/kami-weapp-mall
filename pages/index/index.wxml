@@ -22,5 +22,5 @@
     </view>
   </view>
   <i-load-more tip="已经到底了" loading="{{ false }}" />
+  <view class='footer'>zdxx提供技术支持</view>
 </view>
-<view class='footer'>zdxx提供技术支持</view>
