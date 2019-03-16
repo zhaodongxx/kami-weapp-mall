@@ -8,20 +8,17 @@
     </block>
   </view>
   <view class='orders'>
-    <van-cell
-      title="我的订单"
-      value="查看所有订单"
-      is-link
-    />
+    <van-cell title="我的订单" value="查看所有订单" border="{{false}}" is-link url="/pages/order-list/order-list" />
+    <i-tab-bar current="{{ current }}" bindchange="handleChange">
+      <i-tab-bar-item key="homepage" icon="coupons" current-icon="coupons_fill" title="待付款"></i-tab-bar-item>
+      <i-tab-bar-item key="group" icon="task" current-icon="task  _fill" dot="true" title="待发货"></i-tab-bar-item>
+      <i-tab-bar-item key="remind" icon="service" current-icon="service_fill" count="1" title="待收货"></i-tab-bar-item>
+      <!-- <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" dot title="My"></i-tab-bar-item> -->
+    </i-tab-bar>
   </view>
 
   <view class='addr'>
-   <van-cell
-      title="收货地址"
-      is-link
-      url="/pages/addr-list/addr-list"
-    />
+    <van-cell title="收货地址" is-link url="/pages/addr-list/addr-list" />
   </view>
   <view class='footer'>zdxx提供技术支持</view>
 </view>
-

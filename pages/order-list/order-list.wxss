@@ -1,0 +1,11 @@
+/**index.wxss**/
+.no-order{
+  text-align: center;
+  margin-top: 50px;
+  color: #bfbfbf;
+
+}
+
+.no-order text{
+  display: block;
+}
