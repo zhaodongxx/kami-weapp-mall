@@ -20,5 +20,12 @@
   <view class='addr'>
     <van-cell title="收货地址" is-link url="/pages/addr-list/addr-list" />
   </view>
-  <view class='footer'>zdxx提供技术支持</view>
+
+  <view class='feedback'>
+    <van-cell title="关于" is-link url="/pages/about/about"/>
+  </view>
+
+  <view class='footer'>
+    zdxx提供技术支持
+  </view>
 </view>

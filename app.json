@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/about/about",
+    "pages/my/my",
     "pages/goods-details/index",
     "pages/index/index",
     "pages/order-list/order-list",
-    "pages/my/my",
     "pages/cart/cart",
     "pages/logs/logs",
     "pages/addr-list/addr-list"

@@ -30,3 +30,7 @@
 .orders {
   margin-bottom: 20rpx;
 }
+
+.addr{
+  margin-bottom:20rpx;
+}
