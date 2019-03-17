@@ -37,9 +37,15 @@ Page({
     })
   },
   showAreaList() {
-    console.log("1");
+    wx.hideKeyboard()
     this.setData({
       show: true,
+    })
+  },
+  //Popup弹出层关闭是
+  onClose() {
+    this.setData({
+      show: false,
     })
   },
   cancelArea() {
