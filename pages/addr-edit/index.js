@@ -5,67 +5,54 @@ import Toast from '../../miniprogram_npm/vant-weapp/toast/toast';
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    imgUrls: [
-      'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
-      'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-      'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
-    ],
-    indicatorDots: true,
-    autoplay: true,
-    circular: true, //衔接滑动
-    interval: 3000,
-    duration: 1000,
-  },
-  //事件处理函数
-  onClickIcon() {
-    Toast({
-      message: "点击图标",
-      duration: 1500
-    });
-  },
-
-  onClickButton() {
-    Toast({
-      message: "点击按钮",
-      duration: 1500
-    });
-  },
-  onLoad: function() {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse) {
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
+    show: false,
+    aera: [],
+    areaList: {
+      province_list: {
+        110000: '北京市',
+        120000: '天津市'
+      },
+      city_list: {
+        110100: '北京市',
+        120100: '天津市',
+      },
+      county_list: {
+        110101: '东城区',
+        110102: '西城区',
+        110105: '朝阳区',
+        110106: '丰台区',
+        120101: '和平区',
+        120102: '河东区',
+        120103: '河西区',
+        120104: '南开区',
+        120105: '河北区',
       }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
     }
   },
-  handleSubmit(){
-    wx.navigateTo({
-      url: '../addr-list/addr-list'
+  onLoad: function() {},
+  //保存
+  handleSubmit() {
+    wx.wx.navigateBack({
+      delta: 1
+    })
+  },
+  showAreaList() {
+    console.log("1");
+    this.setData({
+      show: true,
+    })
+  },
+  cancelArea() {
+    this.setData({
+      show: false,
+    })
+  },
+  addArea(options) {
+    console.log(options)
+    console.log(options.detail)
+    this.setData({
+      show: false,
+      area: options.detail.values
     })
   }
- 
 })

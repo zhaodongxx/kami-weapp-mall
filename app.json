@@ -58,6 +58,8 @@
     "van-goods-action": "/miniprogram_npm/vant-weapp/goods-action/index",
     "van-goods-action-icon": "/miniprogram_npm/vant-weapp/goods-action-icon/index",
     "van-goods-action-button": "/miniprogram_npm/vant-weapp/goods-action-button/index",
+    "van-area": "/miniprogram_npm/vant-weapp/area/index",
+    "van-popup": "/miniprogram_npm/vant-weapp/popup/index",
     "i-load-more": "/miniprogram_npm/iView-Weapp/load-more/index",
     "i-tab-bar": "/miniprogram_npm/iView-Weapp/tab-bar/index",
     "i-tab-bar-item": "/miniprogram_npm/iView-Weapp/tab-bar-item/index",

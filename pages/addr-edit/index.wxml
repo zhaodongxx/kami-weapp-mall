@@ -10,10 +10,15 @@
   <van-cell-group class="addr-form">
     <van-field value="{{ username }}" label="姓名" type="input" focus clearable placeholder="收货人姓名" />
     <van-field value="{{ phone }}" label="电话" type="number" clearable placeholder="11位收货人手机号" maxlength="11" />
-    <van-field value="{{ area }}" label="地区" type="textarea" clearable placeholder="请输入详细地址(最多50字)" />
+    <van-field value="{{ area }}" value="{{area[0].name?(area[0].name+'/'+area[1].name+'/'+area[2].name):''}}" label="地区" type="input" bind:confirm="showAreaList" bind:focus="showAreaList" bind:click-icon="showAreaList" >
+    </van-field>
     <van-field value="{{ addr }}" label="详细地址" type="textarea" clearable border="{{ false }}" placeholder="街道门牌、楼层房间号等信息" />
   </van-cell-group>
   <view class='submit'>
     <van-button type="danger" size="large" bindtap="handleSubmit">保存</van-button>
   </view>
+  <van-popup show="{{ show }}" position="bottom" overlay bind:close="onClose">
+    <van-area area-list="{{ areaList }}" cancel="cancelArea" bind:confirm="addArea" />
+  </van-popup>
+
 </view>
