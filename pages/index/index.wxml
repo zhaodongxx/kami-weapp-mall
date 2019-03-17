@@ -20,6 +20,8 @@
         <view wx:if="{{item.originalPrice && item.originalPrice > 0}}" class="goods-price" style='color:#aaa;text-decoration:line-through'>¥ {{item.originalPrice}}</view>
       </view>
     </view>
+
+    
   </view>
   <i-load-more tip="已经到底了" loading="{{ false }}" />
   <view class='footer'>zdxx提供技术支持</view>

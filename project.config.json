@@ -12,7 +12,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.6.2",
 	"appid": "wxbe957fb9dfcb9e23",
 	"projectname": "kami-mall",
 	"debugOptions": {

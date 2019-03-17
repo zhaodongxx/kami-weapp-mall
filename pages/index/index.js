@@ -2,6 +2,7 @@
 //获取应用实例
 const app = getApp()
 
+
 Page({
   data: {
     motto: 'Hello World',
@@ -19,44 +20,52 @@ Page({
     interval: 3000,
     duration: 1000,
     goods: [{
-      index: 1,
+      id: 1,
       name: "商品名称商品名称商品名称商品名称",
       minPrice: "23.00元",
       originalPrice: "23.00元",
       pic: "/images/books/001.jpg"
     }, {
-      index: 1,
+      id: 2,
       name: "商品名称商品名称商品名称商品名称",
       minPrice: "23.00元",
       originalPrice: "23.00元",
       pic: "/images/books/001.jpg"
     }, {
-      index: 1,
+      id: 3,
       name: "商品名称商品名称商品名称商品名称",
       minPrice: "23.00元",
       originalPrice: "23.00元",
       pic: "/images/books/001.jpg"
-      }, {
-        index: 1,
-        name: "商品名称商品名称商品名称商品名称",
-        minPrice: "23.00元",
-        originalPrice: "23.00元",
-        pic: "/images/books/001.jpg"
-      }, {
-        index: 1,
-        name: "商品名称商品名称商品名称商品名称",
-        minPrice: "23.00元",
-        originalPrice: "23.00元",
-        pic: "/images/books/001.jpg"
-      }, {
-        index: 1,
-        name: "商品名称商品名称商品名称商品名称",
-        minPrice: "23.00元",
-        originalPrice: "23.00元",
-        pic: "/images/books/001.jpg"
-      }]
+    }, {
+      id: 4,
+      name: "商品名称商品名称商品名称商品名称",
+      minPrice: "23.00元",
+      originalPrice: "23.00元",
+      pic: "/images/books/001.jpg"
+    }, {
+      id: 5,
+      name: "商品名称商品名称商品名称商品名称",
+      minPrice: "23.00元",
+      originalPrice: "23.00元",
+      pic: "/images/books/001.jpg"
+    }, {
+      id: 6,
+      name: "商品名称商品名称商品名称商品名称",
+      minPrice: "23.00元",
+      originalPrice: "23.00元",
+      pic: "/images/books/001.jpg"
+    }]
   },
   //事件处理函数
+
+  //跳转至商品详情页  
+  toDetailsTap: function(e) {
+    wx.navigateTo({
+      url: "/pages/goods-details/index?id=" + e.currentTarget.dataset.id
+    })
+  },
+
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
