@@ -1,27 +1,46 @@
 //index.js
 //获取应用实例
-const app = getApp()
+const app = getApp();
+import Toast from '../../miniprogram_npm/vant-weapp/toast/toast';
 
 Page({
   data: {
-    
+    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    imgUrls: [
+      'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+      'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
+      'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    circular: true, //衔接滑动
+    interval: 3000,
+    duration: 1000,
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+  onClickIcon() {
+    Toast({
+      message: "点击图标",
+      duration: 1500
+    });
   },
-  onLoad: function () {
+
+  onClickButton() {
+    Toast({
+      message: "点击按钮",
+      duration: 1500
+    });
+  },
+  onLoad: function() {
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse){
+    } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
@@ -43,19 +62,10 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  },
-  //点击订单按钮
-  handleOrderIconChange({ detail }) {
-    console.log(detail)
+  handleSubmit(){
     wx.navigateTo({
-      url: '../order-list/order-list?current=' + detail.key
+      url: '../addr-list/addr-list'
     })
   }
+ 
 })

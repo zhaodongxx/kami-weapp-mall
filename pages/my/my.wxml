@@ -9,10 +9,10 @@
   </view>
   <view class='orders'>
     <van-cell title="我的订单" value="查看所有订单" border="{{false}}" is-link url="/pages/order-list/order-list" />
-    <i-tab-bar current="{{ current }}" bindchange="handleChange">
-      <i-tab-bar-item key="homepage" icon="coupons" current-icon="coupons_fill" title="待付款"></i-tab-bar-item>
-      <i-tab-bar-item key="group" icon="task" current-icon="task  _fill" dot="true" title="待发货"></i-tab-bar-item>
-      <i-tab-bar-item key="remind" icon="service" current-icon="service_fill" count="1" title="待收货"></i-tab-bar-item>
+    <i-tab-bar current="{{ current }}" bindchange="handleOrderIconChange">
+      <i-tab-bar-item key="1" icon="coupons" current-icon="coupons_fill"  title="待付款"></i-tab-bar-item>
+      <i-tab-bar-item key="2" icon="task" current-icon="task  _fill" dot="true" title="待发货"></i-tab-bar-item>
+      <i-tab-bar-item key="3" icon="service" current-icon="service_fill" count="1" title="待收货"></i-tab-bar-item>
       <!-- <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" dot title="My"></i-tab-bar-item> -->
     </i-tab-bar>
   </view>

@@ -1,9 +1,13 @@
 /**index.wxss**/
+.order-list{
+  height: 100%;
+}
+
 .no-order{
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 750rpx;  
   color: #bfbfbf;
-
 }
 
 .no-order text{

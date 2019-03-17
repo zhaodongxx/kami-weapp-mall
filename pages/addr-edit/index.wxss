@@ -1,0 +1,8 @@
+/**index.wxss**/
+.container {
+  padding-top: 25rpx;
+}
+
+.submit {
+  margin-top: 50rpx;
+}

@@ -1,7 +1,16 @@
 <!--index.wxml-->
 <view class="container">
-
   <view class='addr-list'>
-    <view class='addr'></view>
+    <van-cell icon="edit" bindtap="editAddr">
+      <view slot="title" >
+        <view class="van-cell-text">张伟, 13599999999
+          <van-tag type="danger">默认</van-tag>
+        </view>
+        <view>四川省成都市武侯区幸福大街45号6栋3单元</view>
+      </view>
+    </van-cell>
   </view>
+  <van-goods-action>
+    <van-goods-action-button text="添加收货地址" bind:click="handleAddAddr" />
+  </van-goods-action>
 </view>
