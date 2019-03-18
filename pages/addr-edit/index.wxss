@@ -5,4 +5,5 @@
 
 .submit {
   margin-top: 50rpx;
+  padding: 30rpx;
 }

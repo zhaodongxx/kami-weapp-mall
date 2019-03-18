@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/addr-edit/index",
+    "pages/about/about",
     "pages/addr-list/addr-list",
     "pages/my/my",
-    "pages/about/about",
     "pages/goods-details/index",
     "pages/index/index",
     "pages/order-list/order-list",
