@@ -13,10 +13,39 @@
   </view>
   <van-goods-action>
     <van-goods-action-icon icon="chat-o" text="客服" open-type="contact" bind:click="onClickIcon" />
-    <van-goods-action-icon icon="cart-o" text="购物车"  info="1"  link-type="switchTab" url="/pages/cart/cart" bind:click="onClickIcon" />
+    <van-goods-action-icon icon="cart-o" text="购物车" info="1" link-type="switchTab" url="/pages/cart/cart" bind:click="onClickIcon" />
     <van-goods-action-icon icon="shop-o" text="店铺" link-type="switchTab" url="/pages/index/index" />
     <van-goods-action-button text="加入购物车" type="warning" bind:click="onClickButton" />
     <van-goods-action-button text="立即购买" bind:click="onClickButton" />
   </van-goods-action>
+  <van-popup show="{{ true }}" position="bottom" overlay bind:close="onClose">
+    <view class='popup-container'>
+      <view class="popup-form">
+        <view>
+          
+        </view>
+        <view class='item'>
+          <view class="span">
+            <view class='title'>尺寸:</view>
+            <view class='desc'>剩余85件</view>
+          </view>
+           <view class="span">
+            <view class='title'>购买数量：</view>
+            <view class='desc'>剩余85件</view>
+          </view>
+        </view>
+        <view class='item'>
+          <view class="left">
+            <view class='title'>购买数量：</view>
+            <view class='desc'>剩余85件</view>
+          </view>
+          <van-stepper class="right" value="{{ value }}" integer min="1" max="85" step="1" bind:change="onChange" />
+        </view>
+      </view>
+    </view>
+    <view class='submit'>
+      <van-button type="danger" size="large" bindtap="handleSubmit">确定</van-button>
+    </view>
+  </van-popup>
   <van-toast id="van-toast" />
 </view>

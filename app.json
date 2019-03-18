@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/goods-details/index",
     "pages/addr-edit/index",
     "pages/about/about",
     "pages/addr-list/addr-list",
     "pages/my/my",
-    "pages/goods-details/index",
     "pages/index/index",
     "pages/order-list/order-list",
     "pages/cart/cart",
@@ -60,6 +60,8 @@
     "van-goods-action-button": "/miniprogram_npm/vant-weapp/goods-action-button/index",
     "van-area": "/miniprogram_npm/vant-weapp/area/index",
     "van-popup": "/miniprogram_npm/vant-weapp/popup/index",
+    "van-stepper": "/miniprogram_npm/vant-weapp/stepper/index",
+    "van-panel": "/miniprogram_npm/vant-weapp/panel/index",
     "i-load-more": "/miniprogram_npm/iView-Weapp/load-more/index",
     "i-tab-bar": "/miniprogram_npm/iView-Weapp/tab-bar/index",
     "i-tab-bar-item": "/miniprogram_npm/iView-Weapp/tab-bar-item/index",
@@ -67,4 +69,6 @@
     "i-panel": "/miniprogram_npm/iView-Weapp/panel/index",
     "i-input": "/miniprogram_npm/iView-Weapp/input/index"
   }
+
+  
 }

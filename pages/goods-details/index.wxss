@@ -2,3 +2,27 @@
 .slide-image {
   width: 100%;
 }
+
+.popup-form{
+  margin-left: 30rpx;
+}
+
+.popup-form .item{
+  padding: 30rpx 30rpx 30rpx 0;
+  position: relative;
+  border-top: solid 1rpx #e8e8e8;
+}
+
+.popup-form .item .left{
+  display: inline-block
+}
+
+.desc{
+  color: #8c8c8c;
+  font-size: 24rpx;
+}
+
+.popup-form .item .right{
+  float: right;
+  right: 30rpx;
+}
