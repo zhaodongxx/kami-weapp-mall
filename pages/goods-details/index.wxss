@@ -1,28 +1,41 @@
 /**index.wxss**/
+
 .slide-image {
   width: 100%;
 }
 
-.popup-form{
+.popup-form {
   margin-left: 30rpx;
 }
 
-.popup-form .item{
-  padding: 30rpx 30rpx 30rpx 0;
+.span {
+  padding-bottom: 20rpx;
+}
+
+.span .title {
+  padding-bottom: 20rpx;
+}
+
+.popup-form .item {
+  padding: 30rpx 30rpx 0 0;
   position: relative;
   border-top: solid 1rpx #e8e8e8;
 }
 
-.popup-form .item .left{
-  display: inline-block
+.popup-form .item .left {
+  display: inline-block;
 }
 
-.desc{
+.desc {
   color: #8c8c8c;
   font-size: 24rpx;
 }
 
-.popup-form .item .right{
+.popup-form .item .right {
   float: right;
   right: 30rpx;
+}
+
+.submit {
+  margin-top: 30rpx;
 }

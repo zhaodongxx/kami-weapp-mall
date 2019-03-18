@@ -29,10 +29,14 @@ Page({
   },
 
   onClickButton() {
-    Toast({
-      message: "点击按钮",
-      duration: 1500
-    });
+    this.setData({
+      show: true
+    })
+  },
+  onClose() {
+    this.setData({
+      show: false
+    })
   },
   onLoad: function() {
     if (app.globalData.userInfo) {

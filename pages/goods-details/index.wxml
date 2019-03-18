@@ -18,25 +18,29 @@
     <van-goods-action-button text="加入购物车" type="warning" bind:click="onClickButton" />
     <van-goods-action-button text="立即购买" bind:click="onClickButton" />
   </van-goods-action>
-  <van-popup show="{{ true }}" position="bottom" overlay bind:close="onClose">
+  <van-popup show="{{ show }}" position="bottom" overlay bind:close="onClose">
     <view class='popup-container'>
       <view class="popup-form">
         <view>
-          
+
         </view>
         <view class='item'>
           <view class="span">
-            <view class='title'>尺寸:</view>
-            <view class='desc'>剩余85件</view>
+            <view class='title'>尺寸：</view>
+            <view class='desc'>
+              <van-button type="danger" size="small" bindtap="handleSubmit">300*600</van-button>
+            </view>
           </view>
-           <view class="span">
-            <view class='title'>购买数量：</view>
-            <view class='desc'>剩余85件</view>
+          <view class="span">
+            <view class='title'>包装：</view>
+            <view class='desc'>
+              <van-button type="danger" size="mini" bindtap="handleSubmit">箱</van-button>
+            </view>
           </view>
         </view>
         <view class='item'>
           <view class="left">
-            <view class='title'>购买数量：</view>
+            <view>购买数量：</view>
             <view class='desc'>剩余85件</view>
           </view>
           <van-stepper class="right" value="{{ value }}" integer min="1" max="85" step="1" bind:change="onChange" />
