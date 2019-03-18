@@ -32,7 +32,7 @@ Page({
   onLoad: function() {},
   //保存
   handleSubmit() {
-    wx.wx.navigateBack({
+    wx.navigateBack({
       delta: 1
     })
   },

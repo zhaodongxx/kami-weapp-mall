@@ -6,12 +6,8 @@
       <view>该小程序完全为第三方开发者开发，仅用于学习交流，禁止用于其他用途。</view>
     </view>
     <view class='item'>
-      <view class='title'>版本</view>
-       v1.0.6
-    </view>
-    <view class='item'>
       <view class='title'>反馈</view>
-       <van-button type="danger" size="large" open-type="feedback">意见反馈</van-button>
+      <van-button type="danger" size="large" open-type="feedback">意见反馈</van-button>
     </view>
   </view>
 </view>
