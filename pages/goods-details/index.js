@@ -10,9 +10,10 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     imgUrls: [
-      'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
-      'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-      'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
+      "/images/books/gs-001.jpg",
+      "/images/books/gs-002.jpg",
+      "/images/books/gs-003.jpg",
+      "/images/books/gs-004.jpg"
     ],
     indicatorDots: true,
     autoplay: true,
@@ -37,6 +38,20 @@ Page({
     this.setData({
       show: false
     })
+  },
+  //图片点击事件
+  clickImg: function(event) {
+    console.log(event)
+    var src = event.currentTarget.dataset.src; //获取data-src
+    var imgList = event.currentTarget.dataset.list; //获取data-list
+    //图片预览
+    console.log(src)
+    console.log(imgList)
+    // wx.previewImage({
+    //   current: src, // 当前显示图片的http链接
+    //   urls: imgList // 需要预览的图片http链接列表
+
+    // })
   },
   onLoad: function() {
     if (app.globalData.userInfo) {

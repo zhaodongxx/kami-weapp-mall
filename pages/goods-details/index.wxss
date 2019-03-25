@@ -1,7 +1,110 @@
 /**index.wxss**/
+swiper{
+    height: 500rpx;
+    width: 100%;
+}
+swiper-item image {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
 
-.slide-image {
-  width: 100%;
+.item{
+background:#fff;
+margin-bottom: 20rpx;
+}
+
+.goods-info{
+  margin-right: 50rpx;
+}
+
+.goods-content {
+  padding: 20rpx 20rpx 0 20rpx;
+}
+
+.goods-title {
+  font-weight: 500;
+  font-size: 32rpx;
+  line-height: 48rpx;
+  color: black;
+  opacity: 0.85;
+}
+
+.goods-desc {
+  padding: 15rpx 0 20rpx 0;
+  font-size: 24rpx;
+  color: black;
+  opacity: 0.65;
+}
+
+.goods-price {
+  color: #f44;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+}
+
+.goods-price-icon {
+  font-size: 32rpx;
+}
+
+.goods-price-number {
+  font-size: 40rpx;
+}
+
+.share-icon{
+  font-weight: 500;
+}
+.share{
+  float: right
+}
+.share-text{
+  font-size: 20rpx;
+}
+
+.goods-cart-footer {
+  font-size: 24rpx;
+  padding: 20rpx 0;
+  vertical-align: center;
+  border-top: solid .5rpx rgba(0, 0, 0, 0.05);
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* 成交记录 start */
+
+.table{
+  padding: 20rpx 0 0 0rpx;
+}
+
+.th{
+   padding: 12rpx 0;
+   background: rgba(0, 0, 0, .015);
+   padding-left: 20rpx;
+}
+
+.th .left{
+  text-align: center;
+}
+
+.tr{
+  border-top: solid .5rpx rgba(0, 0, 0, 0.05);
+  padding: 12rpx 0;
+  margin-left: 20rpx;
+}
+
+.table .center{
+  color: rgba(0, 0, 0, 0.25)
 }
 
 .popup-form {
@@ -38,4 +141,9 @@
 
 .submit {
   margin-top: 30rpx;
+}
+
+.footer{
+  position:static;
+  height: 100rpx;
 }

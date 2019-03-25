@@ -1,15 +1,149 @@
 <!--index.wxml-->
 <view class="container">
-  <view class='goods-info'>
+  <view class='goods-cart'>
     <view class='goods-banner'>
       <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
         <block wx:for="{{imgUrls}}">
           <swiper-item>
-            <image src="{{item}}" class="slide-image" width="100%" height="150" />
+            <image bindtap="clickImg" data-src="{{item}}" data-list="{{imgUrls}}" src="{{item}}" class="slide-image" width="100%" height="350" />
           </swiper-item>
         </block>
       </swiper>
     </view>
+    <view class='goods-content item'>
+      <view class='share'>
+        <van-icon class='share-icon' name="share" color="#f44" size="40rpx" />
+        <view class='share-text'>分享</view>
+      </view>
+      <view class='goods-info'>
+        <view class='goods-title'>
+          【住范儿 * 欧神诺】风逸系列仿古水泥大地砖 600*600 4片/箱
+        </view>
+        <view class="goods-desc">适合地暖/耐磨防污/安全防滑/逼真水泥文理</view>
+        <view class='goods-price'>
+          <text class="goods-price-icon">￥</text>
+          <text class="goods-price-number">243.36</text>
+        </view>
+      </view>
+
+      <view class='class="goods-cart-footer"'>
+        <van-row>
+          <van-col span="8" class='left'>运费 ￥7.80</van-col>
+          <van-col span="8" class='center'>销量 136</van-col>
+          <van-col span="8" class='right'>剩余106</van-col>
+        </van-row>
+      </view>
+    </view>
+  </view>
+  <view class="goods-evaluation item">
+    <van-cell title="宝贝评价" value="暂无评价" />
+  </view>
+  <view class="goods-details item">
+    <van-tabs active="0" bind:click="onClick">
+      <van-tab title="商品详情">
+        <view>商品详情</view>
+        <view>商品详情</view>
+        <view>商品详情</view>
+        <view>商品详情</view>
+        <view>商品详情</view>
+        <view>商品详情</view>
+        <view>商品详情</view>
+        <view>商品详情</view>
+        <view>商品详情</view>
+        <view>商品详情</view>
+        <view>商品详情</view>
+        <view>商品详情</view>
+        <view>商品详情</view>
+      </van-tab>
+      <van-tab title="成交记录">
+        <view class='table'>
+          <view class="th">
+            <van-row>
+              <van-col span="8" class='left'>买家</van-col>
+              <van-col span="8" class='center'>成交时间</van-col>
+              <van-col span="8" class='center'>数量</van-col>
+            </van-row>
+          </view>
+          <view class="tr">
+            <van-row>
+              <van-col span="8" class='left'>李*欣</van-col>
+              <van-col span="8" class='center'>08-09 16:56:12</van-col>
+              <van-col span="8" class='center'>5</van-col>
+            </van-row>
+          </view>
+          <view class="tr">
+            <van-row>
+              <van-col span="8" class='left'>李*欣</van-col>
+              <van-col span="8" class='center'>08-09 16:56:12</van-col>
+              <van-col span="8" class='center'>5</van-col>
+            </van-row>
+          </view>
+          <view class="tr">
+            <van-row>
+              <van-col span="8" class='left'>李*欣</van-col>
+              <van-col span="8" class='center'>08-09 16:56:12</van-col>
+              <van-col span="8" class='center'>5</van-col>
+            </van-row>
+          </view>
+          <view class="tr">
+            <van-row>
+              <van-col span="8" class='left'>李*欣</van-col>
+              <van-col span="8" class='center'>08-09 16:56:12</van-col>
+              <van-col span="8" class='center'>5</van-col>
+            </van-row>
+          </view>
+          <view class="tr">
+            <van-row>
+              <van-col span="8" class='left'>李*欣</van-col>
+              <van-col span="8" class='center'>08-09 16:56:12</van-col>
+              <van-col span="8" class='center'>5</van-col>
+            </van-row>
+          </view>
+          <view class="tr">
+            <van-row>
+              <van-col span="8" class='left'>李*欣</van-col>
+              <van-col span="8" class='center'>08-09 16:56:12</van-col>
+              <van-col span="8" class='center'>5</van-col>
+            </van-row>
+          </view>
+          <view class="tr">
+            <van-row>
+              <van-col span="8" class='left'>李*欣</van-col>
+              <van-col span="8" class='center'>08-09 16:56:12</van-col>
+              <van-col span="8" class='center'>5</van-col>
+            </van-row>
+          </view>
+          <view class="tr">
+            <van-row>
+              <van-col span="8" class='left'>李*欣</van-col>
+              <van-col span="8" class='center'>08-09 16:56:12</van-col>
+              <van-col span="8" class='center'>5</van-col>
+            </van-row>
+          </view>
+          <view class="tr">
+            <van-row>
+              <van-col span="8" class='left'>李*欣</van-col>
+              <van-col span="8" class='center'>08-09 16:56:12</van-col>
+              <van-col span="8" class='center'>5</van-col>
+            </van-row>
+          </view>
+          <view class="tr">
+            <van-row>
+              <van-col span="8" class='left'>李*欣</van-col>
+              <van-col span="8" class='center'>08-09 16:56:12</van-col>
+              <van-col span="8" class='center'>5</van-col>
+            </van-row>
+          </view>
+          <view class="tr">
+            <van-row>
+              <van-col span="8" class='left'>李*欣</van-col>
+              <van-col span="8" class='center'>08-09 16:56:12</van-col>
+              <van-col span="8" class='center'>5</van-col>
+            </van-row>
+          </view>
+        </view>
+      </van-tab>
+    </van-tabs>
   </view>
   <van-goods-action>
     <van-goods-action-icon icon="chat-o" text="客服" open-type="contact" bind:click="onClickIcon" />
@@ -52,4 +186,6 @@
     </view>
   </van-popup>
   <van-toast id="van-toast" />
+  <!-- <i-load-more tip="已经到底了" loading="{{ false }}" /> -->
+  <view class='footer'>zdxx提供技术支持</view>
 </view>
