@@ -5,10 +5,9 @@ import Toast from '../../miniprogram_npm/vant-weapp/toast/toast';
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    buttonContent: "", //弹出框按钮文字
+    url: "",
+    type: "",
     imgUrls: [
       "/images/books/gs-001.jpg",
       "/images/books/gs-002.jpg",
@@ -28,11 +27,33 @@ Page({
       duration: 1500
     });
   },
-
-  onClickButton() {
+  joinCart() {
     this.setData({
+      buttonContent: "确定",
+      url: "/pages/cart/cart",
       show: true
     })
+  },
+  //点击立即购买
+  buyNow() {
+    this.setData({
+      buttonContent: "下一步",
+      url: "/pages/confirm-order/index",
+      show: true
+    })
+  },
+  //处理提交订单
+  handleSubmit() {
+    //立即购买
+    if (this.data.buttonContent === "下一步") {
+      wx.redirectTo({
+        url: this.data.url
+      })
+    } else {
+      wx.switchTab({
+        url: this.data.url,
+      })
+    }
   },
   onClose() {
     this.setData({

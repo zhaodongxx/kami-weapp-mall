@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 物流信息 -->
+  <view class="logistics-box">
+    <van-cell title="李强，18585555555" icon="location-o" value="" is-link border="false" clickable label="成都市武侯区幸福大道二段袁家路" />
+  </view>
+  <view class="h10"></view>
+  <view class="mall">
+    <van-cell title="住范儿家具商城" icon="shop" border="false" />
+  </view>
+  <view class="goods-list mb10">
+    <view class="card">
+      <van-card num="2" price="176.58" desc="300*600, 箱" title="【住范儿 欧神诺】水泥灰系列釉面瓷片墙砖 300*600 9片/箱" thumb="{{ imageURL }}" thumb-mode="scaleToFill" thumb-link="/pages/cart/cart" link-type="switchTab" />
+    </view>
+    <view class="card">
+      <van-card num="2" price="176.58" desc="300*600, 箱" title="【住范儿 欧神诺】水泥灰系列釉面瓷片墙砖 300*600 9片/箱" thumb="{{ imageURL }}" thumb-mode="scaleToFill" />
+    </view>
+  </view>
+  <view class="preferential mb10">
+    <van-cell title="优惠" border="false" value="暂无可用" is-link />
+  </view>
+  <view class="mall mb10">
+    <van-cell title="配送方式" value="普通快递免邮费" />
+    <van-field value="" clearable label="买家留言" placeholder="留言建议提前协商（50字以内）" bind:click-icon="onClickIcon" border="{{ false }}" />
+
+  </view>
+
+  <view class="bill mb10">
+    <van-cell title="商品金额" value="￥ 149.00" />
+    <van-cell title="运费" border value="+ ￥ 22.00" />
+    <van-cell   value="合计：171.00" />
+  </view>
+  <van-submit-bar price="{{ 3050 }}" button-text="提交订单" bind:submit="onClickSubmitOrder">
+  </van-submit-bar>
+   <van-toast id="van-toast" />
+   <view class='footer'>zdxx提供技术支持</view>
+</view>

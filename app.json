@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/goods-details/index",
+    "pages/confirm-order/index",
     "pages/index/index",
     "pages/addr-edit/index",
     "pages/about/about",

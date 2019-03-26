@@ -149,8 +149,8 @@
     <van-goods-action-icon icon="chat-o" text="客服" open-type="contact" bind:click="onClickIcon" />
     <van-goods-action-icon icon="cart-o" text="购物车" info="1" link-type="switchTab" url="/pages/cart/cart" bind:click="onClickIcon" />
     <van-goods-action-icon icon="shop-o" text="店铺" link-type="switchTab" url="/pages/index/index" />
-    <van-goods-action-button text="加入购物车" type="warning" bind:click="onClickButton" />
-    <van-goods-action-button text="立即购买" bind:click="onClickButton" />
+    <van-goods-action-button text="加入购物车" type="warning" data-type="cart" bind:click="joinCart" />
+    <van-goods-action-button text="立即购买" data-type="confirm-order" bind:click="buyNow" />
   </van-goods-action>
   <van-popup show="{{ show }}" position="bottom" overlay bind:close="onClose">
     <view class='popup-container'>
@@ -182,7 +182,7 @@
       </view>
     </view>
     <view class='submit'>
-      <van-button type="danger" size="large" bindtap="handleSubmit">确定</van-button>
+      <van-button type="danger" size="large" bindtap="handleSubmit">{{buttonContent}}</van-button>
     </view>
   </van-popup>
   <van-toast id="van-toast" />
